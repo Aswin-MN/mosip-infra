@@ -6,8 +6,8 @@ node {
  def branch = params.BRANCH_NAME
  //def dockerImagesTagVersion = branch  //This will ensure that docker images tag should have 1-1 relation ship with project version
  projectToBuild = 'registration'
- //def registryUrl = params.REG_CLIENT_REGISTRYURL
- //def registryName = params.REG_CLIENT_REGISTRYNAME
+ def registryUrl = params.REG_CLIENT_REGISTRYURL
+ def registryName = params.REG_CLIENT_REGISTRYNAME
  def gitUrl = params.GIT_URL_GUINEA
  def gitCredentials = params.GIT_CREDENTIALS_GUINEA
  def buildInfo1
